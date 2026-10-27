@@ -10,7 +10,7 @@ function App() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/competitions")
+    fetch("https://contestradar-cybernaut.onrender.com/api/competitions")
       .then((res) => {
         if (!res.ok) throw new Error("Could not load competition data");
         return res.json();
